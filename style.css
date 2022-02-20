@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+.wrapper {
+    background-color: white;
+    max-width: 450px;
+    height: 680px;
+    border-radius: 25px;
+    border: 1px solid hsl(225, 100%, 94%);
+    box-shadow: 1px 1px hsl(225, 100%, 94%);
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    display: block;
+    padding-bottom: 35px;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 900;
+}
+
+.description {
+    text-align: center;
+    padding: 0 60px 30px 60px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px 10px 20px 10px;
+    margin: 0 60px 30px 60px;
+    border-radius: 10px;
+}
+
+.price .music-logo {
+    padding-left: 5px;
+}
+
+.price-statement {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    font-size: 13px;
+    justify-content: center;
+    line-height: 23px;
+}
+
+.price-statement .plan {
+    font-weight: 900;
+}
+
+.price-statement .yearly-price {
+    color: hsl(224, 23%, 55%);
+}
+
+.price a {
+    display: flex;
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    margin: 15px 0 0 auto;
+    font-weight: 700;
+}
+
+.price a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons .btn-payment {
+    font-size: 14px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    margin: 0 60px 10px 60px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0px 10px hsl(225, 100%, 98%);
+}
+
+.btn-payment:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.buttons .btn-cancel {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+    background-color: white;
+    border: none;
+    margin: 0 150px 10px 150px;
+    padding-top: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-cancel:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media screen and(max-width:600px) {
+    body {
+        background-repeat: no-repeat;
+    }
+    .wrapper {
+        max-width: 350px;
+        max-height: 580px;
+    }
+    title {
+        font-size: 25px;
+    }
+    .description {
+        padding: 0 30px;
+    }
+}
